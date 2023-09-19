@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="label" id="l1">enter a number</label>
+    <input type="text" id ="val">
+    <button  id="push" onclick="insert()">push</button>
+    <button id="pop" onclick="del() ">pop</button>
+    <p id = "res"> values=</p>
+    <script>
+         let a = [];
+         const elem = document.getElementById("val");
+        //  let i=0;
+        //  let val= 10;
+         function insert(elem){
+            a.push(elem);
+            document.write(a);
+          
+         }
+         function del(){
+          
+            document.write(a);
+         }
+
+         document.write(a);
+    </script>
+</body>
+</html>

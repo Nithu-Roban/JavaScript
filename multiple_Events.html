@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Multiple EventListener</h2>
+    <h3>click the button </h3>
+    <button id="add">try now</button>
+    <h3 id="res"></h3>
+    <script>
+        var x = document.getElementById("add");
+        x.addEventListener("mouseover",myFun1);
+        x.addEventListener("click",myFun2);
+        x.addEventListener("mouseout",myFun3);
+     
+        function myFun1(){
+            document.getElementById("add").style.color="red";
+            document.getElementById("res").innerHTML="Mouse Over";
+        }
+        function myFun2(){
+            document.getElementById("res").innerHTML="Clicked!!";
+        }
+        function myFun3(){
+            document.getElementById("add").style.color="purple";
+        //    document.getElementById("add").style.backgroundColor="cyan";
+            document.getElementById("res").innerHTML="Mouse out";
+        }
+       
+    </script>
+</body>
+</html>

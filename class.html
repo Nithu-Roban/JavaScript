@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript HTML</h2>
+    <p> Finding Html elem by class name</p>
+    <p class ="intro">Hello World</p>
+    <p class="intro"> this example </p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        const x= document.getElementsByClassName("intro");// accessing elements using class name
+        document.getElementById("demo").innerHTML =
+         'the First para (index 0) with class="intro" is ' +x[0].innerHTML;
+        document.getElementById("demo1").innerHTML = 'second para with index 1 is: '+x[1].innerHTML; 
+    </script>
+</body>
+</html>

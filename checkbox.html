@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Are you a web developer</h2>
+    <input type="checkbox"  class ="chk" name="chk1" id="chk1" value="yes Iam a Developer">Yes, Iam a Developer <br>
+    <input type="checkbox" class="chk" name="chk2" id="chk2" value="No">No, I am Not<br>
+    <button type="submit" onclick="check()">Submit</button><br><br>
+    <h3 id="res" style="color: darkcyan;" ></h3>
+    <script>
+        function check(){
+            var yes = document.getElementById("chk1");
+            var no = document.getElementById("chk2");
+                if(yes.checked== true && no.checked== true){
+                    return document.getElementById("res").innerHTML = " <b> Error!!! please mark only one </b>";
+                }
+                else if(yes.checked==true){
+                    var y = document.getElementById("chk1").value;
+                    return document.getElementById("res").innerHTML = y+ "<b>, lets proceed to login </b>";
+                }
+                else if(no.checked==true){
+                    var n = document.getElementById("chk2").value;
+                    return document.getElementById("res").innerHTML = n+ "<b> Not a developer, retry!! </b>";
+                }
+        }
+    </script>
+</body>
+</html>
